@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: gentleman_walk_down
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 2601514537129177563, guid: cc5a12190f1a4f64a8e2a885bda8d802, type: 3}
+  - {fileID: -6021245859881801256, guid: cc5a12190f1a4f64a8e2a885bda8d802, type: 3}
+  - {fileID: 6933450678567269769, guid: cc5a12190f1a4f64a8e2a885bda8d802, type: 3}
+  - {fileID: 6611497878597077051, guid: cc5a12190f1a4f64a8e2a885bda8d802, type: 3}
+  - {fileID: -7717474246031703851, guid: cc5a12190f1a4f64a8e2a885bda8d802, type: 3}
+  - {fileID: -4035409334605507318, guid: cc5a12190f1a4f64a8e2a885bda8d802, type: 3}
+  - {fileID: 6735734629355433481, guid: cc5a12190f1a4f64a8e2a885bda8d802, type: 3}
+  - {fileID: 7781687242332718214, guid: cc5a12190f1a4f64a8e2a885bda8d802, type: 3}
+  loops: 1
+  secondsBetweenFrames: 0.1

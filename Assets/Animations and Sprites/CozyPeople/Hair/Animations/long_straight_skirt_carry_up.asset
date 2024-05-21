@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: long_straight_skirt_carry_up
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -983588751736678837, guid: f35da486ca189ce4da817aaff5c00cb7, type: 3}
+  - {fileID: -8805328085744686723, guid: f35da486ca189ce4da817aaff5c00cb7, type: 3}
+  - {fileID: -5366888942556355428, guid: f35da486ca189ce4da817aaff5c00cb7, type: 3}
+  - {fileID: 2893399207081164905, guid: f35da486ca189ce4da817aaff5c00cb7, type: 3}
+  - {fileID: 1539739140672859862, guid: f35da486ca189ce4da817aaff5c00cb7, type: 3}
+  - {fileID: 345399588412283130, guid: f35da486ca189ce4da817aaff5c00cb7, type: 3}
+  - {fileID: 9026534143465904143, guid: f35da486ca189ce4da817aaff5c00cb7, type: 3}
+  - {fileID: -3897971136472484674, guid: f35da486ca189ce4da817aaff5c00cb7, type: 3}
+  loops: 0
+  secondsBetweenFrames: 0.01

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: buzzcut_walk_left
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 6571582165766299699, guid: 7256280ca7cfc744cb0b17d7cc0c185f, type: 3}
+  - {fileID: -5592563272734792801, guid: 7256280ca7cfc744cb0b17d7cc0c185f, type: 3}
+  - {fileID: 5858914145492465574, guid: 7256280ca7cfc744cb0b17d7cc0c185f, type: 3}
+  - {fileID: -3576864990075504725, guid: 7256280ca7cfc744cb0b17d7cc0c185f, type: 3}
+  - {fileID: 1827077515100771991, guid: 7256280ca7cfc744cb0b17d7cc0c185f, type: 3}
+  - {fileID: 3331697891312497753, guid: 7256280ca7cfc744cb0b17d7cc0c185f, type: 3}
+  - {fileID: -99289432186467501, guid: 7256280ca7cfc744cb0b17d7cc0c185f, type: 3}
+  - {fileID: -6596540786895615564, guid: 7256280ca7cfc744cb0b17d7cc0c185f, type: 3}
+  loops: 1
+  secondsBetweenFrames: 0.1

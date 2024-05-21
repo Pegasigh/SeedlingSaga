@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: cow_a_walk_down
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -1851697144, guid: 594b473bc12825848b10a4fa847de7c2, type: 3}
+  - {fileID: -1557893978, guid: 594b473bc12825848b10a4fa847de7c2, type: 3}
+  - {fileID: 626169274, guid: 594b473bc12825848b10a4fa847de7c2, type: 3}
+  - {fileID: -1716373108, guid: 594b473bc12825848b10a4fa847de7c2, type: 3}
+  loops: 1
+  secondsBetweenFrames: 0.5

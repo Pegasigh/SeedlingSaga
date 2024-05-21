@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: spacebuns_jump_right
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -7274223838721149764, guid: f0e886ccc2b60a84794326f2a2a27f0d, type: 3}
+  - {fileID: 529700106184926579, guid: f0e886ccc2b60a84794326f2a2a27f0d, type: 3}
+  - {fileID: 3829865060501576019, guid: f0e886ccc2b60a84794326f2a2a27f0d, type: 3}
+  - {fileID: 341992945023903739, guid: f0e886ccc2b60a84794326f2a2a27f0d, type: 3}
+  - {fileID: -7463136742806188328, guid: f0e886ccc2b60a84794326f2a2a27f0d, type: 3}
+  loops: 0
+  secondsBetweenFrames: 0.01

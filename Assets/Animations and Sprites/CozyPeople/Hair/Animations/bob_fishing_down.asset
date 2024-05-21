@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: bob_fishing_down
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -3766588982629283985, guid: 97dd43834a872bc40960f7427db2dfb6, type: 3}
+  - {fileID: -3314609814794317599, guid: 97dd43834a872bc40960f7427db2dfb6, type: 3}
+  - {fileID: 3438770017030607557, guid: 97dd43834a872bc40960f7427db2dfb6, type: 3}
+  - {fileID: 6572484227419263104, guid: 97dd43834a872bc40960f7427db2dfb6, type: 3}
+  - {fileID: 6442234358359203905, guid: 97dd43834a872bc40960f7427db2dfb6, type: 3}
+  loops: 0
+  secondsBetweenFrames: 0.01

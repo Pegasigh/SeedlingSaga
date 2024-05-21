@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d3ba82ba0f8274bad3854526e42d9d, type: 3}
+  m_Name: Animals_AnimationTable
+  m_EditorClassIdentifier: 
+  animations:
+  - {fileID: 11400000, guid: 107c24de0df3c8940bb70be0cfe793cd, type: 2}
+  - {fileID: 11400000, guid: d1695e03895dce84684443e04de2fb71, type: 2}
+  - {fileID: 11400000, guid: 75069fb21166361418d20e9c99c38430, type: 2}
+  - {fileID: 11400000, guid: 040a35607562a0248b1369a6d6fd2c95, type: 2}
+  - {fileID: 11400000, guid: 32494d329ef312443971b93ce4f5b887, type: 2}
+  - {fileID: 11400000, guid: 6459be15769f349479f7bf4085d810bd, type: 2}
+  - {fileID: 11400000, guid: 040ce10b177f8aa4d98df130ad9e9313, type: 2}
+  - {fileID: 11400000, guid: 3bd9aac5999683a4a91d304b050ee00c, type: 2}
+  - {fileID: 11400000, guid: e32d6311d3451cf4e94e9d2ce78167d3, type: 2}
+  - {fileID: 11400000, guid: 63887087e3906a645a5467233e30ccd0, type: 2}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: ponytail_fishing_left
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 2031102902162844225, guid: 5b1b4705a6419d343af38a64972eac9d, type: 3}
+  - {fileID: 6999582871291114197, guid: 5b1b4705a6419d343af38a64972eac9d, type: 3}
+  - {fileID: 1296858156074790785, guid: 5b1b4705a6419d343af38a64972eac9d, type: 3}
+  - {fileID: 4451484823570253534, guid: 5b1b4705a6419d343af38a64972eac9d, type: 3}
+  - {fileID: -2738426570689213500, guid: 5b1b4705a6419d343af38a64972eac9d, type: 3}
+  loops: 0
+  secondsBetweenFrames: 0.01

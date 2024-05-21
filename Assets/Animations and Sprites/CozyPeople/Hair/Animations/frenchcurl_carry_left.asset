@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: frenchcurl_carry_left
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -3713055083528199463, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  - {fileID: -3056389487678185307, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  - {fileID: -483064732364639764, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  - {fileID: -5476918075034469419, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  - {fileID: 2433262495625109399, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  - {fileID: -3517539662222812338, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  - {fileID: -7453185802766631284, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  - {fileID: -6956156977035212591, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  loops: 0
+  secondsBetweenFrames: 0.01

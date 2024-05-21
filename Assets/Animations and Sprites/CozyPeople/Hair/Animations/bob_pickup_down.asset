@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: bob_pickup_down
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -1965162345596785623, guid: 97dd43834a872bc40960f7427db2dfb6, type: 3}
+  - {fileID: 3912385389735012008, guid: 97dd43834a872bc40960f7427db2dfb6, type: 3}
+  - {fileID: 6603639575427274447, guid: 97dd43834a872bc40960f7427db2dfb6, type: 3}
+  - {fileID: -5137304920009687318, guid: 97dd43834a872bc40960f7427db2dfb6, type: 3}
+  - {fileID: -8031769839789718139, guid: 97dd43834a872bc40960f7427db2dfb6, type: 3}
+  loops: 0
+  secondsBetweenFrames: 0.01

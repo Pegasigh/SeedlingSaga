@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: extra_long_pickaxe_left
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 4104753652689269220, guid: 21657a807d06884479d15ef1ef05e6e1, type: 3}
+  - {fileID: -3058976838347331396, guid: 21657a807d06884479d15ef1ef05e6e1, type: 3}
+  - {fileID: 6341490986563802479, guid: 21657a807d06884479d15ef1ef05e6e1, type: 3}
+  - {fileID: 394678041111623413, guid: 21657a807d06884479d15ef1ef05e6e1, type: 3}
+  - {fileID: 7948774013629034333, guid: 21657a807d06884479d15ef1ef05e6e1, type: 3}
+  loops: 0
+  secondsBetweenFrames: 0.01

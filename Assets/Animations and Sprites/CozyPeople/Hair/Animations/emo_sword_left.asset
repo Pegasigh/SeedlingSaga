@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: emo_sword_left
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -8128267474439636902, guid: 2110cfb1d3643f2469f747d05b4449bf, type: 3}
+  - {fileID: -7833156890703676636, guid: 2110cfb1d3643f2469f747d05b4449bf, type: 3}
+  - {fileID: 8712586209529490849, guid: 2110cfb1d3643f2469f747d05b4449bf, type: 3}
+  - {fileID: 2950437267332839618, guid: 2110cfb1d3643f2469f747d05b4449bf, type: 3}
+  loops: 0
+  secondsBetweenFrames: 0.01

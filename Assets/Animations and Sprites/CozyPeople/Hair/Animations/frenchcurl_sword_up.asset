@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacc06d29770da4dae7d275657127d3, type: 3}
+  m_Name: frenchcurl_sword_up
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 8698941108300054248, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  - {fileID: -6914553525745629413, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  - {fileID: -3505269878229345227, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  - {fileID: 2997497797254063479, guid: 576f3f96b4ba87e42ac8f9ae84f067ac, type: 3}
+  loops: 0
+  secondsBetweenFrames: 0.01
