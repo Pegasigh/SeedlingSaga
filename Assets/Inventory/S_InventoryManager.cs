@@ -7,22 +7,25 @@ using UnityEngine.UIElements;
 public class S_InventoryManager : MonoBehaviour
 {
     public S_InventorySlot[] inventorySlots;
-    [Header("Hotbar Slots")]
-    public S_HotbarItem activeHotbarSlot;
-    public S_HotbarItem leftHotbarSlot;
-    public S_HotbarItem rightHotbarSlot;
-    [Header("")]
     public GameObject inventoryItemPrefab;
     public GameObject inventoryMenu;
-    private bool isActive;
+    public GameObject hotbarCanvas;
+    private S_HotbarItem activeHotbarSlot;
+    private S_HotbarItem leftHotbarSlot;
+    private S_HotbarItem rightHotbarSlot;
+    //private bool isActive;
 
     int selectedSlot = -1;
 
     private void Start()
     {
-        isActive = false;
-        inventoryMenu.SetActive(false);
+        activeHotbarSlot = hotbarCanvas.transform.GetChild(0).Find("ActiveItem").GetComponentInChildren<S_HotbarItem>();
+        leftHotbarSlot = hotbarCanvas.transform.GetChild(0).Find("LeftItem").GetComponentInChildren<S_HotbarItem>();
+        rightHotbarSlot = hotbarCanvas.transform.GetChild(0).Find("RightItem").GetComponentInChildren<S_HotbarItem>();
+
         changeSelectedSlot(0);
+
+        inventoryMenu.GetComponent<Canvas>().enabled = false;
     }
 
     private void Update()
@@ -30,8 +33,11 @@ public class S_InventoryManager : MonoBehaviour
         //toggle GUI
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            isActive = !isActive;
-            inventoryMenu.SetActive(isActive);
+            ///////////////////////////////////////////////////////////
+            //isActive = !isActive;
+            //inventoryMenu.SetActive(isActive);
+
+            inventoryMenu.GetComponent<Canvas>().enabled = !inventoryMenu.GetComponent<Canvas>().enabled;
         }
 
         //scroll left through inventory
@@ -48,18 +54,11 @@ public class S_InventoryManager : MonoBehaviour
             else if (selectedSlot == -1 || selectedSlot == inventorySlots.Length - 1) changeSelectedSlot(0);
         }
 
-        //
+        // close inventory if open or put away held item if inventory is already closed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(!isActive)
-            {
-                changeSelectedSlot(-1);
-            }
-            else
-            {
-                isActive = false;
-                inventoryMenu.SetActive(false);
-            }
+            if (!inventoryMenu.GetComponent<Canvas>().enabled) changeSelectedSlot(-1);
+            else inventoryMenu.GetComponent<Canvas>().enabled = false;
         }
 
         UpdateHotbar();

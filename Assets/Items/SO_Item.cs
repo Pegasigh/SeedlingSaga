@@ -10,4 +10,6 @@ public class SO_Item : ScriptableObject
     public Sprite image;
     public bool stackable = false;
     public int maxCount = 10;
+    public bool sellable = true;
+    public int price = 1;
 }

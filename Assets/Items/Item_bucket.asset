@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b801f00e77e0834bb35d38dd8f170f5, type: 3}
   m_Name: Item_bucket
   m_EditorClassIdentifier: 
+  itemName: 
   image: {fileID: 21300000, guid: 1790c87c0ac3cdd4797b85e88323d503, type: 3}
   stackable: 0
   maxCount: 1
+  sellable: 0
+  price: 1
