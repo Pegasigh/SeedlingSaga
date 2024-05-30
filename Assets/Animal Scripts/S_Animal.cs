@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class S_Animal : S_InteractableObject
+public class S_Animal : MonoBehaviour, I_Interactable, I_OnNextDay
 {
+    S_CalendarSystem calendarSystem;
     S_AnimationController animationController;
     SO_AnimationTable animations;
     private string animationPrefix_; //might contain "baby"
@@ -12,12 +13,12 @@ public class S_Animal : S_InteractableObject
     public SO_SpeciesInfo speciesInfo;
     public string nickname;
     public S_AnimalBuilding home;
-    private bool isAlive;
-    private int age; //days lived
-    private bool isFull;
-    private bool hasBeenPet;
-    private float timeOutside; //hours spent outdoors
-    private float health; //0-100
+    public bool isAlive;
+    public int age; //days lived
+    public bool isFull;
+    public bool hasBeenPet;
+    public float timeOutside; //hours spent outdoors
+    public float health; //0-100
 
 
     private void Start()
@@ -39,7 +40,7 @@ public class S_Animal : S_InteractableObject
         health = 100;
     }
 
-    public void Overnight()
+    public void OnNextDay()
     {
         if(isAlive)
         {
@@ -50,7 +51,11 @@ public class S_Animal : S_InteractableObject
             //if weather is bad: health -= timeOutside * 2;
             //if weather is good and timeOutside < 6: health -= 10;
             //health -= home.overpopulatedCount * 2;
-            if (health <= 0) Die();
+            if (health <= 0)
+            {
+                health = 0;
+                Die();
+            } 
 
             //item production
             for (int i = 0; i < speciesInfo.produce.Length; i++)
@@ -84,7 +89,7 @@ public class S_Animal : S_InteractableObject
         animationController.SetAnimation(speciesInfo.animationPrefix + "die");
     }
 
-    public override void InteractionA(S_Player player)
+    public void InteractionA(S_Player player)
     {
         Debug.Log("InteractionA");
 
@@ -107,7 +112,7 @@ public class S_Animal : S_InteractableObject
         }
     }
 
-    public override void InteractionB(S_Player player)
+    public void InteractionB(S_Player player)
     {
         Debug.Log("InteractionB");
 

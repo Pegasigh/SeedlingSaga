@@ -21,7 +21,7 @@ public class S_Player : MonoBehaviour
     //TODO: change these interaction keys
     public KeyCode interactionKeyA = KeyCode.Space;
     public KeyCode interactionKeyB = KeyCode.KeypadEnter;
-    private List<GameObject> interactableObjects = new List<GameObject>();
+    public List<Component> interactableComponents = new List<Component>();
 
 
 
@@ -64,39 +64,50 @@ public class S_Player : MonoBehaviour
         //interaction
         if (Input.GetKeyDown(interactionKeyA) || Input.GetKeyDown(interactionKeyB))
         {
-            GameObject closestObject;
-            if(interactableObjects.Count > 0) //if within range of any interactable objects
+            Component closestInteractable;
+            if(interactableComponents.Count > 0) //if within range of any interactable objects
             {
                 //finding closest interactable object
-                closestObject = interactableObjects[0];
-                foreach (var obj in interactableObjects)
+                closestInteractable = interactableComponents[0];
+                foreach (Component component in interactableComponents)
                 {
-                    if (Vector2.Distance(obj.transform.position, transform.position) < Vector2.Distance(closestObject.transform.position, transform.position)) //is closer than closest object
+                    if (Vector2.Distance(component.transform.position, transform.position) < Vector2.Distance(closestInteractable.transform.position, transform.position)) //is closer than closest object
                     {
-                        closestObject = obj;
+                        closestInteractable = component;
                     }
                 }
 
                 //call object's interact function
-                if (Input.GetKeyDown(interactionKeyA)) closestObject.GetComponent<S_InteractableObject>().InteractionA(this);
-                if (Input.GetKeyDown(interactionKeyB)) closestObject.GetComponent<S_InteractableObject>().InteractionB(this);
+                I_Interactable interactable = closestInteractable as I_Interactable;
+                if (Input.GetKeyDown(interactionKeyA)) interactable.InteractionA(this);
+                if (Input.GetKeyDown(interactionKeyB)) interactable.InteractionB(this);
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<S_InteractableObject>())
+        //checking of other object is interactable
+        foreach(Component component in collision.GetComponents<Component>())
         {
-            interactableObjects.Add(collision.gameObject);
+            if (component is I_Interactable)
+            {
+                //adding interactable component to list
+                interactableComponents.Add(component);
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.GetComponent<S_InteractableObject>())
+        //checking of other object is interactable
+        foreach (Component component in collision.GetComponents<Component>())
         {
-            interactableObjects.Remove(collision.gameObject);
+            if (component is I_Interactable)
+            {
+                //removing interactable component to list
+                interactableComponents.Remove(component);
+            }
         }
     }
 }
